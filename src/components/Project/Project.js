@@ -17,11 +17,11 @@ function Project() {
   const Experience = [
     {
       id: 0,
-      title: "Booking Backend",
+      title: "Booking App Backend",
       description:
         "This project implements a secure, scalable back end for user-posted activities and bookings, featuring dedicated data modeling and integrated payment processing.",
       image: { vibes },
-      githubUrl: "https://github.com/mooka007/VibesAdvisorMongoVers.git",
+      githubUrl: "https://github.com/mooka007/Adavisor",
       // demoUrl: "https://youtu.be/",
       technologies: [
         "Express js",
