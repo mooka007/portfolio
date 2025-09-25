@@ -1,0 +1,176 @@
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container-project {
+  margin-top: 2rem;
+}
+
+.project-header {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-box {
+  border-radius: 10px;
+  max-width: 60%;
+  height: 190px;
+  padding: 1.5rem;
+  background-color: var(--gray-color);
+}
+
+.text-box {
+  margin-top: 0.3rem;
+}
+
+.project-line {
+  position: relative;
+  left: 10px;
+  bottom: -40px;
+}
+
+/* Details */
+
+.project-details {
+  margin: 3rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.details-left {
+  margin: 0 2rem;
+}
+
+.text-figma {
+  cursor: pointer;
+  color: var(--white-color);
+  display: inline-flex;
+  align-items: center;
+}
+
+.text-figma:hover {
+  transition: 350ms;
+  background: linear-gradient(
+    90deg,
+    #f24e1e 2.73%,
+    #a259ff 37.68%,
+    #13c5c6 71.63%,
+    #0acf83 100%
+  );
+  background-size: 400vh;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  animation: text-move infinite 3s alternate;
+}
+
+.icon-figma {
+  width: 10px;
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+/* .details-stack {
+  margin: 0rem 0rem;
+} */
+
+.resp {
+  display: flex;
+  flex-wrap: wrap; /* This is the key change to allow items to wrap */
+  justify-content: center; /* This will center your project cards */
+  align-items: center;
+  gap: 30px; /* Provides space between project cards */
+}
+.scrollable-projects {
+  overflow-y: auto;
+  max-height: 600px; /* Adjust this value to control how many projects are visible */
+  margin-top: 1rem;
+}
+
+.project-picture {
+  max-width: 224px;
+  border-radius: 11px;
+}
+
+.project-picture-2 {
+  border-radius: 11px;
+  width: 224px;
+  height: 230px;
+}
+
+.project-picture-3 {
+  border-radius: 11px;
+  width: 224px;
+}
+
+.little-icon {
+  max-width: 21px;
+}
+
+.little-icon-2 {
+  max-width: 18px;
+}
+
+.container-footer {
+  padding: 2rem 0;
+  color: var(--white-smoke-color);
+  text-align: center;
+}
+
+p {
+  margin-bottom: 4px;
+}
+
+/* Add a new class to style each project card for proper spacing and width */
+.project-card {
+  width: 45%; /* Adjust this value to control how many projects fit on a line */
+  max-width: 500px; /* Prevents cards from getting too wide on large screens */
+  /* margin-bottom: 2rem; */
+}
+
+@media (max-width: 840px) {
+  .project-card {
+    width: 100%; /* Makes each card take a full line on small screens */
+    max-width: 100%;
+  }
+
+  .resp {
+    flex-direction: column; /* Stacks projects vertically on small screens */
+    gap: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .project-details {
+    justify-content: center;
+  }
+
+  .project-header {
+    justify-content: center;
+  }
+
+  .project-box {
+    max-width: 100%;
+  }
+
+  .details-left {
+    margin: 0;
+  }
+}
+
+@keyframes text-move {
+  0% {
+    background-position: left;
+  }
+
+  100% {
+    background-position: right;
+  }
+}
+
