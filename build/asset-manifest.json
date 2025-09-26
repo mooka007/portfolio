@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.a5b74890.css",
-    "main.js": "/resume/static/js/main.2b3cf735.js",
-    "static/media/yallah.PNG": "/resume/static/media/yallah.ece78ca606425ad367f1.PNG",
-    "static/media/img.JPG": "/resume/static/media/img.4d1a89c4c13a5af57604.JPG",
-    "static/media/pic1.PNG": "/resume/static/media/pic1.9866b82349045edd4453.PNG",
-    "static/media/ipay2.PNG": "/resume/static/media/ipay2.7e130044ae1b330fc162.PNG",
-    "static/media/pic3.PNG": "/resume/static/media/pic3.3dbc19cd3c4608548b1b.PNG",
-    "static/media/pic2.PNG": "/resume/static/media/pic2.84aba6ebd969b82cdc9f.PNG",
-    "static/media/vibes.png": "/resume/static/media/vibes.2b3aa68901eece3bc5a9.png",
-    "static/media/awa.PNG": "/resume/static/media/awa.f0b264d58fff88819f92.PNG",
-    "static/media/App-Login.jpg": "/resume/static/media/App-Login.59ffacdc333de255a087.jpg",
-    "static/media/TTT.PNG": "/resume/static/media/TTT.c6ba7da3ceec5ec91395.PNG",
-    "static/media/linkedin.jpg": "/resume/static/media/linkedin.ba1d24ffd2e9fa15cce4.jpg",
-    "index.html": "/resume/index.html",
-    "static/media/line-purple.svg": "/resume/static/media/line-purple.27209a3cacbec9a90c239cc2555b0a9a.svg",
-    "main.a5b74890.css.map": "/resume/static/css/main.a5b74890.css.map",
-    "main.2b3cf735.js.map": "/resume/static/js/main.2b3cf735.js.map"
+    "main.css": "/portfolio/static/css/main.a5b74890.css",
+    "main.js": "/portfolio/static/js/main.8a71a217.js",
+    "static/media/yallah.PNG": "/portfolio/static/media/yallah.ece78ca606425ad367f1.PNG",
+    "static/media/img.JPG": "/portfolio/static/media/img.4d1a89c4c13a5af57604.JPG",
+    "static/media/pic1.PNG": "/portfolio/static/media/pic1.9866b82349045edd4453.PNG",
+    "static/media/ipay2.PNG": "/portfolio/static/media/ipay2.7e130044ae1b330fc162.PNG",
+    "static/media/pic3.PNG": "/portfolio/static/media/pic3.3dbc19cd3c4608548b1b.PNG",
+    "static/media/pic2.PNG": "/portfolio/static/media/pic2.84aba6ebd969b82cdc9f.PNG",
+    "static/media/vibes.png": "/portfolio/static/media/vibes.2b3aa68901eece3bc5a9.png",
+    "static/media/awa.PNG": "/portfolio/static/media/awa.f0b264d58fff88819f92.PNG",
+    "static/media/App-Login.jpg": "/portfolio/static/media/App-Login.59ffacdc333de255a087.jpg",
+    "static/media/TTT.PNG": "/portfolio/static/media/TTT.c6ba7da3ceec5ec91395.PNG",
+    "static/media/linkedin.jpg": "/portfolio/static/media/linkedin.ba1d24ffd2e9fa15cce4.jpg",
+    "index.html": "/portfolio/index.html",
+    "static/media/line-purple.svg": "/portfolio/static/media/line-purple.27209a3cacbec9a90c239cc2555b0a9a.svg",
+    "main.a5b74890.css.map": "/portfolio/static/css/main.a5b74890.css.map",
+    "main.8a71a217.js.map": "/portfolio/static/js/main.8a71a217.js.map"
   },
   "entrypoints": [
     "static/css/main.a5b74890.css",
-    "static/js/main.2b3cf735.js"
+    "static/js/main.8a71a217.js"
   ]
 }
