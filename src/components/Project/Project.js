@@ -11,12 +11,32 @@ import pic3 from "../../assets/images/pic3.PNG";
 import awa from "../../assets/images/awa.PNG";
 import yallah from "../../assets/yallah.PNG";
 import vibes from "../../assets/vibes.png";
+import dash from "../../assets/dashh.PNG";
 
 // console.log(yallah);
 function Project() {
   const Experience = [
     {
       id: 0,
+      title: "Stock Management Dashboard",
+      description:
+        "The Stock Management Dashboard helps businesses manage product sales efficiently. It tracks total sales, monitors debts, and manages inventory levels, streamlining operations and improving financial oversight.",
+      image: { dash },
+      githubUrl: "",
+      // demoUrl: "https://youtu.be/",
+      technologies: [
+        "Reactjs",
+        "Express js",
+        "Node js",
+        "MongoDB",
+        "Sequelize",
+        "JWT",
+        "Nodemailer",
+      ],
+      featured: true,
+    },
+    {
+      id: 1,
       title: "Booking App Backend",
       description:
         "This project implements a secure, scalable back end for user-posted activities and bookings, featuring dedicated data modeling and integrated payment processing.",
@@ -35,7 +55,7 @@ function Project() {
       featured: true,
     },
     {
-      id: 1,
+      id: 2,
       title: "YallahGive.ma",
       description:
         "is a full-stack donation platform designed for the Moroccan market. it offers a seamless user experience for creating and supporting people in need.",
@@ -46,7 +66,7 @@ function Project() {
       featured: true,
     },
     {
-      id: 2,
+      id: 3,
       title: "Portfolio",
       description: "A digital portfolio showcasing web apps and projects.",
       image: { pic3 },
@@ -56,7 +76,7 @@ function Project() {
       featured: true,
     },
     {
-      id: 3,
+      id: 4,
       title: "IPay",
       description:
         "A MERN stack payment app for secure money transfers between friends with an intuitive Material-UI interface.",
@@ -67,7 +87,7 @@ function Project() {
       featured: true,
     },
     {
-      id: 4,
+      id: 5,
       title: "Shopping Store",
       description:
         "A ReactJS shop store using Reactstrap and Redux for state management. Includes product listings, cart, and checkout process.",
@@ -78,7 +98,7 @@ function Project() {
       featured: true,
     },
     {
-      id: 5,
+      id: 6,
       title: "Tic Tac Toe",
       description: "A simple Tic tac toe game.",
       image: { TTT },
@@ -89,7 +109,7 @@ function Project() {
       featured: true,
     },
     {
-      id: 6,
+      id: 7,
       title: "Managemen-School-App",
       description:
         "The Management School App website, built using PHP and JavaScript, offers seamless management solutions for educational institutions.",
@@ -101,7 +121,7 @@ function Project() {
     },
 
     {
-      id: 7,
+      id: 8,
       title: "Rent-A-Car",
       description:
         "A car rental platform offering a wide vehicle selection for trips and temporary needs. Provides a seamless online booking experience.",
@@ -112,7 +132,7 @@ function Project() {
       featured: true,
     },
     {
-      id: 8,
+      id: 9,
       title: "printf",
       description:
         "A versatile function in programming languages that outputs formatted text to the console or other output streams",
@@ -152,6 +172,8 @@ function Project() {
                 <div className="project-details">
                   <img
                     src={
+                      project.image.dash ||
+                      project.image.vibes ||
                       project.image.ipay2 ||
                       project.image.TTT ||
                       project.image.pic1 ||
