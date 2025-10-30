@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a5b74890.css",
-    "main.js": "/portfolio/static/js/main.a57110d6.js",
-    "static/media/yallah.PNG": "/portfolio/static/media/yallah.ece78ca606425ad367f1.PNG",
-    "static/media/img.JPG": "/portfolio/static/media/img.4d1a89c4c13a5af57604.JPG",
-    "static/media/pic1.PNG": "/portfolio/static/media/pic1.9866b82349045edd4453.PNG",
-    "static/media/ipay2.PNG": "/portfolio/static/media/ipay2.7e130044ae1b330fc162.PNG",
-    "static/media/dashh.PNG": "/portfolio/static/media/dashh.9a5bf72ddf9dd606681c.PNG",
-    "static/media/pic3.PNG": "/portfolio/static/media/pic3.3dbc19cd3c4608548b1b.PNG",
-    "static/media/pic2.PNG": "/portfolio/static/media/pic2.84aba6ebd969b82cdc9f.PNG",
-    "static/media/vibes.png": "/portfolio/static/media/vibes.2b3aa68901eece3bc5a9.png",
-    "static/media/awa.PNG": "/portfolio/static/media/awa.f0b264d58fff88819f92.PNG",
-    "static/media/App-Login.jpg": "/portfolio/static/media/App-Login.59ffacdc333de255a087.jpg",
-    "static/media/TTT.PNG": "/portfolio/static/media/TTT.c6ba7da3ceec5ec91395.PNG",
-    "static/media/linkedin.jpg": "/portfolio/static/media/linkedin.ba1d24ffd2e9fa15cce4.jpg",
-    "index.html": "/portfolio/index.html",
-    "static/media/line-purple.svg": "/portfolio/static/media/line-purple.27209a3cacbec9a90c239cc2555b0a9a.svg",
-    "main.a5b74890.css.map": "/portfolio/static/css/main.a5b74890.css.map",
-    "main.a57110d6.js.map": "/portfolio/static/js/main.a57110d6.js.map"
+    "main.css": "/static/css/main.ababf1d6.css",
+    "main.js": "/static/js/main.5d2269fa.js",
+    "static/media/yallah.PNG": "/static/media/yallah.ece78ca606425ad367f1.PNG",
+    "static/media/img.JPG": "/static/media/img.4d1a89c4c13a5af57604.JPG",
+    "static/media/pic1.PNG": "/static/media/pic1.9866b82349045edd4453.PNG",
+    "static/media/ipay2.PNG": "/static/media/ipay2.7e130044ae1b330fc162.PNG",
+    "static/media/dashh.PNG": "/static/media/dashh.9a5bf72ddf9dd606681c.PNG",
+    "static/media/pic3.PNG": "/static/media/pic3.3dbc19cd3c4608548b1b.PNG",
+    "static/media/pic2.PNG": "/static/media/pic2.84aba6ebd969b82cdc9f.PNG",
+    "static/media/vibes.png": "/static/media/vibes.2b3aa68901eece3bc5a9.png",
+    "static/media/awa.PNG": "/static/media/awa.f0b264d58fff88819f92.PNG",
+    "static/media/App-Login.jpg": "/static/media/App-Login.59ffacdc333de255a087.jpg",
+    "static/media/TTT.PNG": "/static/media/TTT.c6ba7da3ceec5ec91395.PNG",
+    "static/media/linkedin.jpg": "/static/media/linkedin.ba1d24ffd2e9fa15cce4.jpg",
+    "index.html": "/index.html",
+    "static/media/line-purple.svg": "/static/media/line-purple.27209a3cacbec9a90c239cc2555b0a9a.svg",
+    "main.ababf1d6.css.map": "/static/css/main.ababf1d6.css.map",
+    "main.5d2269fa.js.map": "/static/js/main.5d2269fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5b74890.css",
-    "static/js/main.a57110d6.js"
+    "static/css/main.ababf1d6.css",
+    "static/js/main.5d2269fa.js"
   ]
 }
