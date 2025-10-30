@@ -9,12 +9,14 @@ export const About = () => {
         <img src={iconImage} alt="" />
       </div>
       <div className="about-left">
-        <span className="purple-text">
-          <span className="purple-smoke-text"> My Name is </span>{" "}
-          <span className="text-figma font-weight-bold">
-            Mohammed Yassine Marzouki ✋
-          </span>{" "}
-        </span>
+        <div>
+          <span className="purple-text">
+            <span className="purple-smoke-text"> My Name is </span>{" "}
+            <span className="text-figma font-weight-bold">
+              Mohammed Yassine Marzouki ✋
+            </span>{" "}
+          </span>
+        </div>
         <p className="gray-text w-75 mx-auto mt-4 mb-4">
           As a MERN stack developer, I specialize in utilizing MongoDB,
           Express.js, React, and Node.js to craft dynamic and engaging web
@@ -24,25 +26,13 @@ export const About = () => {
           excel at building scalable and efficient full-stack solutions that
           drive innovation in web development.
         </p>
-        {/* <div className="d-flex justify-content-around">
-          <ul className="tech-stack">
-            <p className=" text-center">
-              <p className="text-figma m-0">Web development</p>
-            </p>
-            <li className="fw-4">
-              Front-end / Back-end
-              <ul className="tech-stack m-0 mx-2">
-                <li>React js / Express Js</li>
-              </ul>
-            </li>
-          </ul>
-        </div> */}
+
         <div className="d-flex justify-content-around mt-20 mb-20">
           <div>
+            <div className=" text-center">
+              <p className="text-figma font-weight-bold m-0 ">Tools</p>
+            </div>
             <ul className="tech-stack list-disc text-start ml-8 text-center">
-              <p className=" text-center">
-                <p className="text-figma font-weight-bold m-0 ">Tools</p>
-              </p>
               <li>Git Bash</li>
               <li>MongoDbCompass</li>
               <li>MySql</li>
