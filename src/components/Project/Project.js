@@ -12,9 +12,8 @@ import awa from "../../assets/images/awa.PNG";
 import yallah from "../../assets/yallah.PNG";
 import vibes from "../../assets/vibes.png";
 import dash from "../../assets/dashh.PNG";
-import car from "../../assets/kree.jpg";
+import kree from "../../assets/cmpt.PNG";
 
-// console.log(yallah);
 function Project() {
   const Experience = [
     {
@@ -22,10 +21,10 @@ function Project() {
       title: "Rental Car Application",
       description:
         "This project is a car rental web application that allows users to search for available cars, reserve cars, and manage their rental history. It provides a user-friendly interface for car rental services.",
-      image: { car },
+      image: { kree },
       githubUrl: "https://github.com/mooka007/rental_car",
-      // demoUrl: "https://youtu.be/",
-      technologies: ["React Native", "Express js", "Node js", "MongoDB"],
+      demoUrl: "https://youtu.be/ScRxYFDZ6S4",
+      technologies: ["React Native", "Express js", "Postgres"],
       featured: true,
     },
     {
@@ -184,6 +183,7 @@ function Project() {
                 <div className="project-details">
                   <img
                     src={
+                      project.image.kree ||
                       project.image.dash ||
                       project.image.vibes ||
                       project.image.ipay2 ||
