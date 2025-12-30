@@ -23,7 +23,7 @@ function Project() {
         "This project is a car rental web application that allows users to search for available cars, reserve cars, and manage their rental history. It provides a user-friendly interface for car rental services.",
       image: { kree },
       githubUrl: "https://github.com/mooka007/rental_car",
-      // demoUrl: "https://youtu.be/ScRxYFDZ6S4",
+      demoUrl: "https://youtu.be/ScRxYFDZ6S4",
       technologies: ["React Native", "Express js", "Postgres"],
       featured: true,
     },
