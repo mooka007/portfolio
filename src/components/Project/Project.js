@@ -13,7 +13,7 @@ import yallah from "../../assets/yallah.PNG";
 import vibes from "../../assets/vibes.png";
 import dash from "../../assets/dashh.PNG";
 import kree from "../../assets/cmpt.PNG";
-import medical from "../../assets/medicaligne.PNG";
+import medical from "../../assets/medical.webp";
 
 function Project() {
   const Experience = [
