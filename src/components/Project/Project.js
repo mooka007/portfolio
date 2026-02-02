@@ -51,7 +51,7 @@ function Project() {
       // id: 0,
       title: "Medicaligne.fr",
       description:
-        "Medicaligne.fr is a responsive and user-friendly web application built with React.js, designed to provide a seamless online experience for users seeking medical and health-related services. The project showcases modern front-end development practices, clear component architecture, and efficient state management, highlighting my ability to create scalable and professional React applications.",
+        "Medicaligne.fr is a responsive web application built with React.js, offering a smooth and modern user experience for accessing medical and health-related services.",
       image: { medical },
       githubUrl: "",
       demoUrl: "https://youtu.be/rwwvVLMQxv4",
