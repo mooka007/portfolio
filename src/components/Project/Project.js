@@ -13,6 +13,7 @@ import yallah from "../../assets/yallah.PNG";
 import vibes from "../../assets/vibes.png";
 import dash from "../../assets/dashh.PNG";
 import kree from "../../assets/cmpt.PNG";
+import medical from "../../assets/medicaligne.PNG";
 
 function Project() {
   const Experience = [
@@ -34,7 +35,7 @@ function Project() {
         "The Stock Management Dashboard helps businesses manage product sales efficiently. It tracks total sales, monitors debts, and manages inventory levels, streamlining operations and improving financial oversight.",
       image: { dash },
       githubUrl: "",
-      // demoUrl: "https://youtu.be/",
+      demoUrl: "https://youtu.be/vb-V_TKLAgk",
       technologies: [
         "Reactjs",
         "Express js",
@@ -44,6 +45,17 @@ function Project() {
         "JWT",
         "Nodemailer",
       ],
+      featured: true,
+    },
+    {
+      // id: 0,
+      title: "Medicaligne.fr",
+      description:
+        "Medicaligne.fr is a responsive and user-friendly web application built with React.js, designed to provide a seamless online experience for users seeking medical and health-related services. The project showcases modern front-end development practices, clear component architecture, and efficient state management, highlighting my ability to create scalable and professional React applications.",
+      image: { medical },
+      githubUrl: "",
+      demoUrl: "https://youtu.be/rwwvVLMQxv4",
+      technologies: ["Reactjs", "Tailwind CSS", "Radix-ui"],
       featured: true,
     },
     {
@@ -193,7 +205,8 @@ function Project() {
                       project.image.pic3 ||
                       project.image.AppLogin ||
                       project.image.awa ||
-                      project.image.yallah
+                      project.image.yallah ||
+                      project.image.medical
                     }
                     className="project-picture"
                     alt={`Project ${project.title}`}

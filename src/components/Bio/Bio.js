@@ -14,7 +14,7 @@ export const Bio = () => {
       },
     },
     {
-      year: 2023,
+      year: 2025,
       title: {
         where: "Geeks Institute - LaStartUpStation",
         cargo: "Full-Stack Coding Bootcamp - MERN Stack Developer",
