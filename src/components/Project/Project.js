@@ -14,7 +14,7 @@ import vibes from "../../assets/vibes.png";
 import dash from "../../assets/dashh.PNG";
 import kree from "../../assets/cmpt.PNG";
 import medical from "../../assets/medical.webp";
-import visitMNow from "../../assets/visitMNow.png";
+import visitMNow from "../../assets/visitMNOW.PNG";
 
 function Project() {
   const Experience = [
