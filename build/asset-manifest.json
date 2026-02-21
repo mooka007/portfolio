@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.ababf1d6.css",
-    "main.js": "/static/js/main.e575a805.js",
+    "main.css": "/static/css/main.60cb4bdb.css",
+    "main.js": "/static/js/main.ac3e3340.js",
+    "static/media/visitMNow.png": "/static/media/visitMNow.2697502ed7235e13966f.png",
     "static/media/yallah.PNG": "/static/media/yallah.ece78ca606425ad367f1.PNG",
     "static/media/img.JPG": "/static/media/img.4d1a89c4c13a5af57604.JPG",
     "static/media/cmpt.PNG": "/static/media/cmpt.3078c78583b78a5581ed.PNG",
@@ -18,11 +19,11 @@
     "static/media/linkedin.jpg": "/static/media/linkedin.ba1d24ffd2e9fa15cce4.jpg",
     "index.html": "/index.html",
     "static/media/line-purple.svg": "/static/media/line-purple.27209a3cacbec9a90c239cc2555b0a9a.svg",
-    "main.ababf1d6.css.map": "/static/css/main.ababf1d6.css.map",
-    "main.e575a805.js.map": "/static/js/main.e575a805.js.map"
+    "main.60cb4bdb.css.map": "/static/css/main.60cb4bdb.css.map",
+    "main.ac3e3340.js.map": "/static/js/main.ac3e3340.js.map"
   },
   "entrypoints": [
-    "static/css/main.ababf1d6.css",
-    "static/js/main.e575a805.js"
+    "static/css/main.60cb4bdb.css",
+    "static/js/main.ac3e3340.js"
   ]
 }
