@@ -15,13 +15,24 @@ import dash from "../../assets/dashh.PNG";
 import kree from "../../assets/cmpt.PNG";
 import medical from "../../assets/medical.webp";
 import visitMNow from "../../assets/visitMNOW.PNG";
+import hkids from "../../assets/hkidsImag.webp";
 
 function Project() {
   const Experience = [
     {
+      title: "HKids - Reading Platform",
+      description:
+        "A child-friendly digital reading solution designed for young children to enjoy books independently. The platform provides an immersive, distraction-free reading experience with age-appropriate content.",
+      image: { hkids },
+      githubUrl: "https://github.com/mooka007",
+      demoUrl: "https://youtu.be/u86mka684Ic",
+      technologies: ["React Native", "Express.js", "Sequelize", "SQL"],
+      featured: true,
+    },
+    {
       title: "Visit Now Morocco",
       description:
-        "A React Native mobile application designed as a travel companion for exploring Morocco. The app helps users discover cultural landmarks, hidden gems, and essential travel information, aiming to connect travelers with the beauty and experiences Morocco has to offer.",
+        "A React Native mobile application designed as a travel companion for exploring Morocco. The app helps users discover cultural landmarks, hidden gems, aiming to connect travelers with the beauty and experiences Morocco has to offer.",
       image: { visitMNow },
       githubUrl: "https://github.com/mooka007",
       demoUrl: "https://youtu.be/UnavfFLa4ns",
@@ -218,7 +229,8 @@ function Project() {
                       project.image.awa ||
                       project.image.yallah ||
                       project.image.medical ||
-                      project.image.visitMNow
+                      project.image.visitMNow ||
+                      project.image.hkids
                     }
                     className="project-picture"
                     alt={`Project ${project.title}`}
