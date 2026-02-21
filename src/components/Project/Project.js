@@ -14,9 +14,20 @@ import vibes from "../../assets/vibes.png";
 import dash from "../../assets/dashh.PNG";
 import kree from "../../assets/cmpt.PNG";
 import medical from "../../assets/medical.webp";
+import visitMNow from "../../assets/visitMNow.png";
 
 function Project() {
   const Experience = [
+    {
+      title: "Visit Now Morocco",
+      description:
+        "A React Native mobile application designed as a travel companion for exploring Morocco. The app helps users discover cultural landmarks, hidden gems, and essential travel information, aiming to connect travelers with the beauty and experiences Morocco has to offer. The frontend is built with React Native, while the backend API is powered by Laravel.",
+      image: { visitMNow },
+      githubUrl: "https://github.com/mooka007",
+      demoUrl: "https://youtu.be/UnavfFLa4ns",
+      technologies: ["React Native", "Laravel"],
+      featured: true,
+    },
     {
       // id: 0,
       title: "Rental Car Application",
@@ -206,7 +217,8 @@ function Project() {
                       project.image.AppLogin ||
                       project.image.awa ||
                       project.image.yallah ||
-                      project.image.medical
+                      project.image.medical ||
+                      project.image.visitMNow
                     }
                     className="project-picture"
                     alt={`Project ${project.title}`}
