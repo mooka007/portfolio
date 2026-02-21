@@ -21,7 +21,7 @@ function Project() {
     {
       title: "Visit Now Morocco",
       description:
-        "A React Native mobile application designed as a travel companion for exploring Morocco. The app helps users discover cultural landmarks, hidden gems, and essential travel information, aiming to connect travelers with the beauty and experiences Morocco has to offer. The frontend is built with React Native, while the backend API is powered by Laravel.",
+        "A React Native mobile application designed as a travel companion for exploring Morocco. The app helps users discover cultural landmarks, hidden gems, and essential travel information, aiming to connect travelers with the beauty and experiences Morocco has to offer.",
       image: { visitMNow },
       githubUrl: "https://github.com/mooka007",
       demoUrl: "https://youtu.be/UnavfFLa4ns",
