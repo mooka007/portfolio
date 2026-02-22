@@ -16,9 +16,28 @@ import kree from "../../assets/cmpt.PNG";
 import medical from "../../assets/medical.webp";
 import visitMNow from "../../assets/visitMNOW.PNG";
 import hkids from "../../assets/hkidsImag.webp";
+import oarding from "../../assets/oarding.png";
 
 function Project() {
   const Experience = [
+    {
+      // id: 5,
+      title: "Boarding Agency - Front End",
+      description:
+        "A modern internship placement platform with AI-powered company matching, appointment booking, real-time messaging, and a full authentication flow with OTP verification.",
+      image: { oarding },
+      githubUrl: "https://github.com/mooka007",
+      demoUrl: "https://youtu.be/rLIxRYGAGq0",
+      technologies: [
+        "React js",
+        "Vite",
+        "Tailwind CSS",
+        "React Router",
+        "Lucide Icons",
+      ],
+      featured: true,
+    },
+
     {
       title: "HKids - Reading Platform",
       description:
@@ -230,7 +249,8 @@ function Project() {
                       project.image.yallah ||
                       project.image.medical ||
                       project.image.visitMNow ||
-                      project.image.hkids
+                      project.image.hkids ||
+                      project.image.oarding
                     }
                     className="project-picture"
                     alt={`Project ${project.title}`}
