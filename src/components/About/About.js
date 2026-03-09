@@ -1,67 +1,105 @@
 import "./About.css";
-// import iconImage from "../../assets/images/logo.jpg";
-import iconImage from "../../assets/images/img.JPG";
+import { FiCalendar } from "react-icons/fi";
 
-export const About = () => {
+const EXPERIENCE = [
+  {
+    company: "ARH Media",
+    role: "React Native Developer Intern",
+    period: "Jan 2026 – Feb 2026",
+    logo: "📱",
+    highlights: [
+      "1-month internship at ARH Media agency — Béni Mellal.",
+      "Built a React Native mobile application during the training period.",
+      "Worked across marketing digital, web development, and digital communication domains.",
+      "Recognized for seriousness, motivation, and strong team integration.",
+    ],
+  },
+  {
+    company: "Freelancer",
+    role: "Full-Stack Developer",
+    period: "2024 – Present",
+    logo: "💼",
+    highlights: [
+      "Developed client websites using MERN stack, WordPress, and Shopify.",
+      "Integrated payment processors and managed end-to-end project delivery.",
+      "Handled project scoping, communication, and deployment autonomously.",
+    ],
+  },
+  {
+    company: "M5 TECH SARL AU",
+    role: "Web Developer — Technical Department",
+    period: "2023 – 2024",
+    logo: "🏢",
+    highlights: [
+      "Front-end development: UI implementation and responsive design.",
+      "Back-end development: server-side logic and REST API building.",
+      "Web integration: templates, components, and feature integration.",
+      "Analysis & solution design: requirements gathering and technical planning.",
+      "Database architecture, management, structure consistency, and updates.",
+    ],
+  },
+  {
+    company: "Services Online",
+    role: "Digital Content Creator",
+    period: "2022 – 2023",
+    logo: "✍️",
+    highlights: [
+      "Created SEO-optimized blog content on nutrition and alimentation topics.",
+      "Applied keyword research, content optimization tools, and analytics.",
+      "Produced video and slide content for Facebook and TikTok to drive traffic.",
+    ],
+  },
+  {
+    company: "Giant Computer",
+    role: "Computer Network Technician",
+    period: "March – June 2018",
+    logo: "🖥️",
+    highlights: [
+      "Installed, configured, and maintained computer systems and networking equipment.",
+      "Set up CCTV wiring, camera monitoring systems, and peripheral devices.",
+      "Managed IT inventory and resolved hardware issues.",
+    ],
+  },
+  {
+    company: "MenaraHolding — Marrakech",
+    role: "Computer Network Technician",
+    period: "Aug 2017 – Jan 2018",
+    logo: "🌐",
+    highlights: [
+      "Provided helpdesk technical support to internal users.",
+      "Conducted ISO 27001 information security training sessions.",
+      "Installed and configured FTTH networks and network printers.",
+    ],
+  },
+];
+
+export default function About() {
   return (
-    <section id="about" className="container container-about text-center">
-      <div className="about-right hover:scale-105 transition-transform duration-300 hover:shadow-lg hover:rounded-xl">
-        <img src={iconImage} alt="" />
-      </div>
-      <div className="about-left">
-        <div>
-          <span className="purple-text">
-            <span className="purple-smoke-text"> My Name is </span>{" "}
-            <span className="text-figma font-weight-bold">
-              Mohammed Yassine Marzouki ✋
-            </span>{" "}
-          </span>
-        </div>
-        <p className="gray-text w-75 mx-auto mt-4 mb-4">
-          As a MERN stack developer, I specialize in utilizing MongoDB,
-          Express.js, React, and Node.js to craft dynamic and engaging web
-          applications. My expertise spans both front-end and back-end
-          development, allowing me to create seamless user experiences and
-          robust server-side logic. With a deep understanding of JavaScript, I
-          excel at building scalable and efficient full-stack solutions that
-          drive innovation in web development.
-        </p>
-
-        <div className="d-flex justify-content-around mt-20 mb-20">
-          <div>
-            <div className=" text-center">
-              <p className="text-figma font-weight-bold m-0 ">Tools</p>
+    <div>
+      <p className="section-label">Work Experience</p>
+      <div className="exp-list">
+        {EXPERIENCE.map((job, i) => (
+          <div className="exp-card" key={i}>
+            <div className="exp-header">
+              <div className="exp-logo">{job.logo}</div>
+              <div className="exp-info">
+                <div className="exp-top">
+                  <span className="exp-company">{job.company}</span>
+                  <span className="exp-period">
+                    <FiCalendar size={11} /> {job.period}
+                  </span>
+                </div>
+                <span className="exp-role">{job.role}</span>
+              </div>
             </div>
-            <ul className="tech-stack list-disc text-start ml-8 text-center">
-              <li>Git Bash</li>
-              <li>MongoDbCompass</li>
-              <li>MySql</li>
-              <li>Xampp</li>
-              <li>Vs Code</li>
-              <li>Postman</li>
-              <li>Adobe XD</li>
-              <li>Trello</li>
+            <ul className="exp-highlights">
+              {job.highlights.map((h, j) => (
+                <li key={j}>{h}</li>
+              ))}
             </ul>
           </div>
-          <div>
-            <ul className="tech-stack list-disc text-start mr-8 text-center">
-              <p className=" text-center">
-                <span className="text-figma m-0 font-weight-bold">
-                  Technologies
-                </span>
-              </p>
-              {/* <li>HTML5</li> */}
-              <li>Tailwind</li>
-              <li>Express.js</li>
-              <li>React</li>
-              <li>JavaScript</li>
-              <li>Bootstrap</li>
-              <li>PHP</li>
-              <li>C Language</li>
-            </ul>
-          </div>
-        </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
-};
+}

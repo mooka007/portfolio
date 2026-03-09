@@ -1,49 +1,84 @@
-.container-lines {
-  text-align: start;
-}
+/* Education */
+.edu-list { display: flex; flex-direction: column; }
 
-.line {
-  width: 4px;
-  margin: 10px auto;
-  height: 100px;
-  border-radius: 60px;
-  background: linear-gradient(180deg, rgba(245, 2, 2, 0) 0%, #575d66 100%);
-  margin-right: 20px; 
-}
-
-.text-bio {
-  cursor: pointer;
-  transition: transform 250ms;
-  transition: 2s;
-}
-
-.custom-theme {
-  background: #bacbe4 !important;
-  border: 1px solid var(--purple-color) !important;
-  border-radius: 10px !important;
-}
-@import "react-tooltip/dist/react-tooltip.css";
-
-
-.timeline-container {
+.edu-item {
   display: flex;
+  gap: 1rem;
   align-items: flex-start;
 }
 
-.gray0-text{
- font-weight: 600;}
-.white-text{
-  font-weight: bold;
+.edu-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 40px;
 }
 
-.aaa {
-  font-weight: 400;
+.edu-year {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--purple);
+  font-family: var(--font-mono);
+  white-space: nowrap;
 }
 
-.timeline-items {
-  flex-grow: 1; /* Allow items to take available space */
+.edu-line {
+  width: 1px;
+  flex: 1;
+  min-height: 30px;
+  background: var(--border);
+  margin-top: 4px;
 }
 
-.lines-item {
-  margin-bottom: 20px; /* Space between items */
+.edu-item:last-child .edu-line { display: none; }
+
+.edu-card {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-secondary);
+  flex: 1;
+  margin-bottom: 0.6rem;
+  transition: var(--transition);
+}
+
+.edu-card:hover { border-color: var(--border-hover); }
+
+.edu-where {
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+}
+
+.edu-cargo {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* Skills */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  color: var(--text-muted);
+  transition: var(--transition);
+  cursor: default;
+}
+
+.skill-tag:hover {
+  border-color: var(--purple);
+  color: var(--purple);
+  background: var(--purple-dim);
 }

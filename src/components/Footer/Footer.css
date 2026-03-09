@@ -1,5 +1,44 @@
-.container-footer {
-  padding: 5rem 0;
-  color: var(--white-smoke-color);
+.footer {
   text-align: center;
+  padding: 2rem 0 1rem;
+}
+
+.footer-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+
+.footer-sub {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 380px;
+  margin: 0 auto 1.5rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-icon-link {
+  color: var(--text-muted);
+  transition: var(--transition);
+  display: flex;
+  text-decoration: none;
+}
+
+.footer-icon-link:hover {
+  color: var(--purple);
+  text-decoration: none;
+}
+
+.footer-copy {
+  font-size: 0.72rem;
+  color: var(--text-dim);
 }

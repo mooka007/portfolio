@@ -1,8 +1,7 @@
-import React from "react";
 import "./Project.css";
-import Line from "../../assets/images/line-purple.svg";
+import { FiGithub, FiExternalLink } from "react-icons/fi";
+
 import TTT from "../../assets/images/TTT.PNG";
-import Youtube from "../../assets/images/youtube.png";
 import AppLogin from "../../assets/images/App-Login.jpg";
 import ipay2 from "../../assets/images/ipay2.PNG";
 import pic1 from "../../assets/images/pic1.PNG";
@@ -18,306 +17,239 @@ import visitMNow from "../../assets/visitMNOW.PNG";
 import hkids from "../../assets/hkidsImag.webp";
 import oarding from "../../assets/oarding.png";
 
-function Project() {
-  const Experience = [
-    {
-      // id: 5,
-      title: "Boarding Agency - Front End",
-      description:
-        "A modern internship placement platform with AI-powered company matching, appointment booking, real-time messaging, and a full authentication flow with OTP verification.",
-      image: { oarding },
-      githubUrl: "https://github.com/mooka007",
-      demoUrl: "https://youtu.be/rLIxRYGAGq0",
-      technologies: [
-        "React js",
-        "Vite",
-        "Tailwind CSS",
-        "React Router",
-        "Lucide Icons",
-      ],
-      featured: true,
-    },
+const PROJECTS = [
+  {
+    title: "Boarding Agency",
+    period: "2024",
+    description:
+      "A modern internship placement platform with AI-powered company matching, appointment booking, real-time messaging, and full authentication with OTP verification.",
+    stack: ["React", "Vite", "Tailwind CSS", "React Router", "Lucide Icons"],
+    github: "https://github.com/mooka007",
+    live: "https://youtu.be/rLIxRYGAGq0",
+    emoji: "🏢",
+    image: oarding,
+  },
+  {
+    title: "HKids — Reading Platform",
+    period: "2024",
+    description:
+      "A child-friendly digital reading solution for young children to enjoy books independently, with an immersive distraction-free experience.",
+    stack: ["React Native", "Express.js", "Sequelize", "SQL"],
+    github: "https://github.com/mooka007",
+    live: "https://youtu.be/u86mka684Ic",
+    emoji: "📚",
+    image: hkids,
+  },
+  {
+    title: "Visit Now Morocco",
+    period: "2024",
+    description:
+      "A React Native travel companion app for exploring Morocco — discover cultural landmarks and hidden gems across the country.",
+    stack: ["React Native", "Laravel"],
+    github: "https://github.com/mooka007",
+    live: "https://youtu.be/UnavfFLa4ns",
+    emoji: "🇲🇦",
+    image: visitMNow,
+  },
+  {
+    title: "Kree — Rental Car App",
+    period: "2023",
+    description:
+      "A car rental app allowing users to search available cars, reserve vehicles, and manage their rental history with a clean user interface.",
+    stack: ["React Native", "Express.js", "PostgreSQL"],
+    github: "https://github.com/mooka007/rental_car",
+    live: "https://youtu.be/ScRxYFDZ6S4",
+    emoji: "🚗",
+    image: kree,
+  },
+  {
+    title: "Stock Management Dashboard",
+    period: "2023",
+    description:
+      "A business dashboard to manage product sales, track total revenue, monitor debts, and manage inventory levels efficiently.",
+    stack: ["React", "Express.js", "Node.js", "MongoDB", "JWT", "Nodemailer"],
+    github: "",
+    live: "https://youtu.be/vb-V_TKLAgk",
+    emoji: "📊",
+    image: dash,
+  },
+  {
+    title: "Medicaligne.fr",
+    period: "2023",
+    description:
+      "A responsive web application offering a smooth, modern user experience for accessing medical and health-related services.",
+    stack: ["React", "Tailwind CSS", "Radix UI"],
+    github: "",
+    live: "https://youtu.be/rwwvVLMQxv4",
+    emoji: "🏥",
+    image: medical,
+  },
+  {
+    title: "YallahGive.ma",
+    period: "2023",
+    description:
+      "A full-stack donation platform for the Moroccan market, offering a seamless experience for creating and supporting people in need.",
+    stack: ["React", "Tailwind CSS", "Express.js"],
+    github: "https://github.com/mooka007/iPay.git",
+    live: "https://youtu.be/Rpr8GUpSQ5g",
+    emoji: "🤝",
+    image: yallah,
+  },
+  {
+    title: "Booking App Backend",
+    period: "2023",
+    description:
+      "A secure, scalable back end for user-posted activities and bookings, with dedicated data modeling and integrated Stripe payment processing.",
+    stack: ["Express.js", "Node.js", "MongoDB", "Stripe", "JWT", "Nodemailer"],
+    github: "https://github.com/mooka007/Adavisor",
+    live: "",
+    emoji: "📅",
+    image: vibes,
+  },
+  {
+    title: "IPay",
+    period: "2022",
+    description:
+      "A MERN stack peer-to-peer payment app for secure money transfers between friends with an intuitive Material-UI interface.",
+    stack: ["React", "MUI", "Express.js", "MongoDB"],
+    github: "https://github.com/mooka007/iPay.git",
+    live: "https://www.youtube.com/watch?v=yZh67M_WGXE",
+    emoji: "💸",
+    image: ipay2,
+  },
+  {
+    title: "Shopping Store",
+    period: "2022",
+    description:
+      "A ReactJS shop with Redux state management, featuring product listings, cart management, and a full checkout process.",
+    stack: ["React", "Redux", "Bootstrap"],
+    github: "https://github.com/mooka007/ecomReact.git",
+    live: "https://www.youtube.com/watch?v=W58BsdM4VhU",
+    emoji: "🛒",
+    image: pic1,
+  },
+  {
+    title: "Portfolio",
+    period: "2022",
+    description:
+      "A digital portfolio showcasing web apps and projects with a clean, responsive design.",
+    stack: ["React", "Tailwind", "CSS3"],
+    github: "https://github.com/mooka007/",
+    live: "",
+    emoji: "🗂️",
+    image: pic3,
+  },
+  {
+    title: "Rent-A-Car",
+    period: "2022",
+    description:
+      "A car rental platform offering a wide vehicle selection for trips and temporary needs with a seamless online booking experience.",
+    stack: ["React", "Node.js", "Tailwind"],
+    github: "https://github.com/mooka007/Car/",
+    live: "https://www.youtube.com/watch?v=qtDlWeXQxUI",
+    emoji: "🚙",
+    image: pic2,
+  },
+  {
+    title: "School Management App",
+    period: "2021",
+    description:
+      "A full management solution for educational institutions handling students, classes, and schedules.",
+    stack: ["PHP", "Bootstrap", "JavaScript"],
+    github: "https://github.com/mooka007/Managemen-School-App.git",
+    live: "",
+    emoji: "🎓",
+    image: AppLogin,
+  },
+  {
+    title: "Tic Tac Toe",
+    period: "2021",
+    description:
+      "A simple but clean Tic Tac Toe game built with vanilla JavaScript.",
+    stack: ["HTML5", "CSS3", "JavaScript"],
+    github: "https://github.com/mooka007/JS-Projects/tree/master/tictactoe",
+    live: "",
+    emoji: "🎮",
+    image: TTT,
+  },
+  {
+    title: "printf",
+    period: "2021",
+    description:
+      "A custom C implementation of the printf function — built during the 42 Network Piscine program.",
+    stack: ["C Language"],
+    github: "https://github.com/mooka007/_printf",
+    live: "",
+    emoji: "⌨️",
+    image: awa,
+  },
+];
 
-    {
-      title: "HKids - Reading Platform",
-      description:
-        "A child-friendly digital reading solution designed for young children to enjoy books independently. The platform provides an immersive, distraction-free reading experience with age-appropriate content.",
-      image: { hkids },
-      githubUrl: "https://github.com/mooka007",
-      demoUrl: "https://youtu.be/u86mka684Ic",
-      technologies: ["React Native", "Express.js", "Sequelize", "SQL"],
-      featured: true,
-    },
-    {
-      title: "Visit Now Morocco",
-      description:
-        "A React Native mobile application designed as a travel companion for exploring Morocco. The app helps users discover cultural landmarks, hidden gems, aiming to connect travelers with the beauty and experiences Morocco has to offer.",
-      image: { visitMNow },
-      githubUrl: "https://github.com/mooka007",
-      demoUrl: "https://youtu.be/UnavfFLa4ns",
-      technologies: ["React Native", "Laravel"],
-      featured: true,
-    },
-    {
-      // id: 0,
-      title: "Rental Car Application",
-      description:
-        "This project is a car rental web application that allows users to search for available cars, reserve cars, and manage their rental history. It provides a user-friendly interface for car rental services.",
-      image: { kree },
-      githubUrl: "https://github.com/mooka007/rental_car",
-      demoUrl: "https://youtu.be/ScRxYFDZ6S4",
-      technologies: ["React Native", "Express js", "Postgres"],
-      featured: true,
-    },
-    {
-      // id: 0,
-      title: "Stock Management Dashboard",
-      description:
-        "The Stock Management Dashboard helps businesses manage product sales efficiently. It tracks total sales, monitors debts, and manages inventory levels, streamlining operations and improving financial oversight.",
-      image: { dash },
-      githubUrl: "",
-      demoUrl: "https://youtu.be/vb-V_TKLAgk",
-      technologies: [
-        "Reactjs",
-        "Express js",
-        "Node js",
-        "MongoDB",
-        "Sequelize",
-        "JWT",
-        "Nodemailer",
-      ],
-      featured: true,
-    },
-    {
-      // id: 0,
-      title: "Medicaligne.fr",
-      description:
-        "Medicaligne.fr is a responsive web application built with React.js, offering a smooth and modern user experience for accessing medical and health-related services.",
-      image: { medical },
-      githubUrl: "",
-      demoUrl: "https://youtu.be/rwwvVLMQxv4",
-      technologies: ["Reactjs", "Tailwind CSS", "Radix-ui"],
-      featured: true,
-    },
-    {
-      // id: 1,
-      title: "Booking App Backend",
-      description:
-        "This project implements a secure, scalable back end for user-posted activities and bookings, featuring dedicated data modeling and integrated payment processing.",
-      image: { vibes },
-      githubUrl: "https://github.com/mooka007/Adavisor",
-      // demoUrl: "https://youtu.be/",
-      technologies: [
-        "Express js",
-        "Node js",
-        "MongoDB",
-        "Stripe",
-        "JWT",
-        "Nodemailer",
-        "sequelize",
-      ],
-      featured: true,
-    },
-    {
-      // id: 2,
-      title: "YallahGive.ma",
-      description:
-        "is a full-stack donation platform designed for the Moroccan market. it offers a seamless user experience for creating and supporting people in need.",
-      image: { yallah },
-      githubUrl: "https://github.com/mooka007/iPay.git",
-      demoUrl: "https://youtu.be/Rpr8GUpSQ5g",
-      technologies: ["React js", "tailwind", "Express js"],
-      featured: true,
-    },
-    {
-      // id: 3,
-      title: "Portfolio",
-      description: "A digital portfolio showcasing web apps and projects.",
-      image: { pic3 },
-      githubUrl: "https://github.com/mooka007/",
-      demoUrl: "https://www.youtube.com/watch?v=yZh67M_WGXEasd",
-      technologies: ["React js", "Tailwind", "CSS3"],
-      featured: true,
-    },
-    {
-      // id: 4,
-      title: "IPay",
-      description:
-        "A MERN stack payment app for secure money transfers between friends with an intuitive Material-UI interface.",
-      image: { ipay2 },
-      githubUrl: "https://github.com/mooka007/iPay.git",
-      demoUrl: "https://www.youtube.com/watch?v=yZh67M_WGXE",
-      technologies: ["React js", "Mui", "Express js"],
-      featured: true,
-    },
-    {
-      // id: 5,
-      title: "Shopping Store",
-      description:
-        "A ReactJS shop store using Reactstrap and Redux for state management. Includes product listings, cart, and checkout process.",
-      image: { pic1 },
-      githubUrl: "https://github.com/mooka007/ecomReact.git",
-      demoUrl: "https://www.youtube.com/watch?v=W58BsdM4VhU&t=61s",
-      technologies: ["React js", "bootstrap", "CSS3"],
-      featured: true,
-    },
-    {
-      // id: 6,
-      title: "Tic Tac Toe",
-      description: "A simple Tic tac toe game.",
-      image: { TTT },
-      githubUrl:
-        "https://github.com/mooka007/JS-Projects/tree/master/tictactoe",
-      demoUrl: "",
-      technologies: ["HTML5", "CSS3", "JavaScript"],
-      featured: true,
-    },
-    {
-      // id: 7,
-      title: "Managemen-School-App",
-      description:
-        "The Management School App website, built using PHP and JavaScript, offers seamless management solutions for educational institutions.",
-      image: { AppLogin },
-      githubUrl: "https://github.com/mooka007/Managemen-School-App.git",
-      demoUrl: "",
-      technologies: ["PHP - native", "Bootstrap", "JavaScript"],
-      featured: true,
-    },
-
-    {
-      // id: 8,
-      title: "Rent-A-Car",
-      description:
-        "A car rental platform offering a wide vehicle selection for trips and temporary needs. Provides a seamless online booking experience.",
-      image: { pic2 },
-      githubUrl: "https://github.com/mooka007/Car/",
-      demoUrl: "https://www.youtube.com/watch?v=qtDlWeXQxUI",
-      technologies: ["React js", "Node js", "Tailwind"],
-      featured: true,
-    },
-    {
-      // id: 9,
-      title: "printf",
-      description:
-        "A versatile function in programming languages that outputs formatted text to the console or other output streams",
-      image: { awa },
-      githubUrl: "https://github.com/mooka007/_printf",
-      demoUrl: "",
-      technologies: ["C Language"],
-      featured: true,
-    },
-  ];
+export default function Project() {
   return (
-    ////////////////////////////
+    <div>
+      <p className="section-label">Check out my latest work</p>
+      <p className="projects-sub">
+        I've worked on a variety of projects — from mobile apps to full-stack
+        platforms. Here are a few of my favorites.
+      </p>
+      <div className="projects-grid">
+        {PROJECTS.map((p, i) => (
+          <div className="project-card" key={i}>
+            {/* Project Image */}
+            <div className="project-image">
+              <img src={p.image} alt={p.title} />
+            </div>
 
-    <section className="my-20">
-      <div className="purple-text text-center">
-        ‍💻 Open Source -
-        <span className="purple-smoke-text"> Visit my latest projects </span>{" "}
-        <div className="resp ">
-          {Experience.map((project) => (
-            <div
-              id="projects"
-              key={project.id}
-              className={`project-card ${
-                project.featured ? "" : "col"
-              } hover:scale-105 transition-transform duration-300 hover:shadow-lg hover:rounded-xl `}
-            >
-              <div className="flex align-items-center flex-col ml-3">
-                <div className="project-header">
-                  <div className="project-box text-left">
-                    <span className="white-text ">{project.title}</span>
-                    <p className="gray-text text-box text-left">
-                      {project.description}
-                    </p>
-                  </div>
-                  <img className="project-line" src={Line} alt="abajo" />
-                </div>
-                <div className="project-details">
-                  <img
-                    src={
-                      project.image.kree ||
-                      project.image.dash ||
-                      project.image.vibes ||
-                      project.image.ipay2 ||
-                      project.image.TTT ||
-                      project.image.pic1 ||
-                      project.image.pic2 ||
-                      project.image.pic3 ||
-                      project.image.AppLogin ||
-                      project.image.awa ||
-                      project.image.yallah ||
-                      project.image.medical ||
-                      project.image.visitMNow ||
-                      project.image.hkids ||
-                      project.image.oarding
-                    }
-                    className="project-picture"
-                    alt={`Project ${project.title}`}
-                  />
-                  <div className="details-left text-left">
-                    <span className="white-text text-left">Technologies</span>
-                    <div className="details-stack mb-2">
-                      <ul className="gray-text text-left list-disc ml-6">
-                        {project.technologies.map((tech, index) => (
-                          <li key={index}>{tech}</li>
-                        ))}
-                      </ul>
-                    </div>
-                    {project.demoUrl && (
-                      <div className="gray-text flex flex-col ">
-                        Check demo on :{" "}
-                        <div className="flex">
-                          <div className="mx-1 mt-1">
-                            <img
-                              className="mb-1 little-icon-2"
-                              src={Youtube}
-                              alt="GitHub"
-                            />{" "}
-                          </div>
-                          <div className="">
-                            <a
-                              href={project.demoUrl}
-                              target="_blank"
-                              className="text-figma"
-                            >
-                              Youtube
-                            </a>{" "}
-                          </div>
-                        </div>
-                      </div>
-                    )}
-                    <div className="gray-text flex flex-col mt-2 ">
-                      A little star on{" "}
-                      <div className="flex">
-                        <div className="mx-1 mt-1">
-                          <img
-                            className="mb-1 little-icon-2"
-                            src="https://cdn.sanity.io/images/tljndwv6/production/5fa75a7c756062d52b4f0d9244759279dd216201-15x15.svg"
-                            alt="GitHub"
-                          />{" "}
-                        </div>
-                        <div className="">
-                          <a
-                            href={project.githubUrl}
-                            target="_blank"
-                            className=" text-figma"
-                          >
-                            Github
-                          </a>
-                        </div>
-                      </div>
-                      .
-                    </div>
-                  </div>
-                </div>
+            {/* Links */}
+            <div className="project-top">
+              {/* <div className="project-emoji">{p.emoji}</div> */}
+              <div className="project-links">
+                {p.github && (
+                  <a
+                    href={p.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="project-link"
+                    title="GitHub"
+                  >
+                    <FiGithub size={15} />
+                  </a>
+                )}
+                {p.live && (
+                  <a
+                    href={p.live}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="project-link"
+                    title="Demo"
+                  >
+                    <FiExternalLink size={15} />
+                  </a>
+                )}
               </div>
             </div>
-          ))}
-        </div>
+
+            {/* Body */}
+            <div className="project-body">
+              <div className="project-title-row">
+                <h3 className="project-title">{p.title}</h3>
+                <span className="project-period">{p.period}</span>
+              </div>
+              <p className="project-desc">{p.description}</p>
+            </div>
+
+            {/* Stack */}
+            <div className="project-stack">
+              {p.stack.map((t, j) => (
+                <span className="stack-tag" key={j}>
+                  {t}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 }
-
-export default Project;
