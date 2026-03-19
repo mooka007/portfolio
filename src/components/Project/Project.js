@@ -16,11 +16,33 @@ import medical from "../../assets/medical.webp";
 import visitMNow from "../../assets/visitMNOW.PNG";
 import hkids from "../../assets/hkidsImag.webp";
 import oarding from "../../assets/oarding.png";
+import agilicis from "../../assets/aaa.PNG";
 
 const PROJECTS = [
   {
+    title: "Agilicis",
+    period: "2026",
+    description:
+      "A comprehensive e-commerce and diagnostic platform featuring a mobile app for seamless shopping, AI-powered diagnostic tools, real-time notifications, order management, and secure authentication with OTP verification. Includes a robust backend with RESTful APIs, cloud integration, and scalable architecture.",
+    stack: [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "Sequelize",
+      "PostgreSQL",
+      "Cloudinary",
+    ],
+    github: "https://github.com/mooka007",
+    live: "https://www.youtube.com/watch?v=mD_rhSpA-yQ",
+    emoji: "🛒",
+    image: agilicis,
+  },
+  {
     title: "Boarding Agency",
-    period: "2024",
+    period: "2026",
     description:
       "A modern internship placement platform with AI-powered company matching, appointment booking, real-time messaging, and full authentication with OTP verification.",
     stack: ["React", "Vite", "Tailwind CSS", "React Router", "Lucide Icons"],
@@ -31,7 +53,7 @@ const PROJECTS = [
   },
   {
     title: "HKids — Reading Platform",
-    period: "2024",
+    period: "2026",
     description:
       "A child-friendly digital reading solution for young children to enjoy books independently, with an immersive distraction-free experience.",
     stack: ["React Native", "Express.js", "Sequelize", "SQL"],
@@ -42,7 +64,7 @@ const PROJECTS = [
   },
   {
     title: "Visit Now Morocco",
-    period: "2024",
+    period: "2026",
     description:
       "A React Native travel companion app for exploring Morocco — discover cultural landmarks and hidden gems across the country.",
     stack: ["React Native", "Laravel"],
@@ -53,7 +75,7 @@ const PROJECTS = [
   },
   {
     title: "Kree — Rental Car App",
-    period: "2023",
+    period: "2025",
     description:
       "A car rental app allowing users to search available cars, reserve vehicles, and manage their rental history with a clean user interface.",
     stack: ["React Native", "Express.js", "PostgreSQL"],
@@ -64,7 +86,7 @@ const PROJECTS = [
   },
   {
     title: "Stock Management Dashboard",
-    period: "2023",
+    period: "2025",
     description:
       "A business dashboard to manage product sales, track total revenue, monitor debts, and manage inventory levels efficiently.",
     stack: ["React", "Express.js", "Node.js", "MongoDB", "JWT", "Nodemailer"],

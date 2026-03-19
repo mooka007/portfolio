@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.db791b06.css",
-    "main.js": "/static/js/main.307dd85c.js",
+    "main.js": "/static/js/main.8cad2800.js",
     "static/media/visitMNOW.PNG": "/static/media/visitMNOW.2697502ed7235e13966f.PNG",
     "static/media/ana.png": "/static/media/ana.75063eebf9cf1703f369.png",
     "static/media/yallah.PNG": "/static/media/yallah.ece78ca606425ad367f1.PNG",
@@ -10,6 +10,7 @@
     "static/media/pic1.PNG": "/static/media/pic1.9866b82349045edd4453.PNG",
     "static/media/ipay2.PNG": "/static/media/ipay2.7e130044ae1b330fc162.PNG",
     "static/media/dashh.PNG": "/static/media/dashh.9a5bf72ddf9dd606681c.PNG",
+    "static/media/aaa.PNG": "/static/media/aaa.83687fa49e04dc2bcf7c.PNG",
     "static/media/pic3.PNG": "/static/media/pic3.3dbc19cd3c4608548b1b.PNG",
     "static/media/medical.webp": "/static/media/medical.fdc7683894f4543106ab.webp",
     "static/media/pic2.PNG": "/static/media/pic2.84aba6ebd969b82cdc9f.PNG",
@@ -20,10 +21,10 @@
     "static/media/TTT.PNG": "/static/media/TTT.c6ba7da3ceec5ec91395.PNG",
     "index.html": "/index.html",
     "main.db791b06.css.map": "/static/css/main.db791b06.css.map",
-    "main.307dd85c.js.map": "/static/js/main.307dd85c.js.map"
+    "main.8cad2800.js.map": "/static/js/main.8cad2800.js.map"
   },
   "entrypoints": [
     "static/css/main.db791b06.css",
-    "static/js/main.307dd85c.js"
+    "static/js/main.8cad2800.js"
   ]
 }
