@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.db791b06.css",
-    "main.js": "/static/js/main.8cad2800.js",
+    "main.js": "/static/js/main.c13c6a6b.js",
     "static/media/visitMNOW.PNG": "/static/media/visitMNOW.2697502ed7235e13966f.PNG",
     "static/media/ana.png": "/static/media/ana.75063eebf9cf1703f369.png",
     "static/media/yallah.PNG": "/static/media/yallah.ece78ca606425ad367f1.PNG",
@@ -21,10 +21,10 @@
     "static/media/TTT.PNG": "/static/media/TTT.c6ba7da3ceec5ec91395.PNG",
     "index.html": "/index.html",
     "main.db791b06.css.map": "/static/css/main.db791b06.css.map",
-    "main.8cad2800.js.map": "/static/js/main.8cad2800.js.map"
+    "main.c13c6a6b.js.map": "/static/js/main.c13c6a6b.js.map"
   },
   "entrypoints": [
     "static/css/main.db791b06.css",
-    "static/js/main.8cad2800.js"
+    "static/js/main.c13c6a6b.js"
   ]
 }

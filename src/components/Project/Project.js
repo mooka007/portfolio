@@ -52,7 +52,7 @@ const PROJECTS = [
     image: oarding,
   },
   {
-    title: "HKids — Reading Platform",
+    title: "Reading Platform",
     period: "2026",
     description:
       "A child-friendly digital reading solution for young children to enjoy books independently, with an immersive distraction-free experience.",
