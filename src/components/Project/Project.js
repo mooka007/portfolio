@@ -17,8 +17,32 @@ import visitMNow from "../../assets/visitMNOW.PNG";
 import hkids from "../../assets/hkidsImag.webp";
 import oarding from "../../assets/oarding.png";
 import agilicis from "../../assets/aaa.PNG";
+import gali from "../../assets/gali.png";
 
 const PROJECTS = [
+  {
+    title: "GaliPet",
+    period: "2026",
+    description:
+      "A complete pet-care platform that connects pet owners, professionals, and admins through one seamless ecosystem. It includes a mobile app for booking services, secure Stripe payments, messaging, notifications, reviews, and marketplace orders, alongside a professional space and an admin dashboard for managing services, reservations, users, and platform activity.",
+    stack: [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "Prisma",
+      "PostgreSQL",
+      "Stripe",
+      "Socket.IO",
+      "React",
+      "Vite",
+    ],
+    github: "https://github.com/mooka007/Gali-pet",
+    live: "https://gali-pet.vercel.app",
+    emoji: "🐾",
+    image: "galipet",
+  },
   {
     title: "Agilicis",
     period: "2026",
