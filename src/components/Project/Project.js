@@ -18,8 +18,37 @@ import hkids from "../../assets/hkidsImag.webp";
 import oarding from "../../assets/oarding.png";
 import agilicis from "../../assets/aaa.PNG";
 import gali from "../../assets/gali.png";
+import next from "../../assets/next.png";
 
 const PROJECTS = [
+  {
+    title: "ShopGuide AI",
+    period: "2026",
+    description:
+      "An AI-powered gaming e-commerce platform inspired by Next Level PC. It combines a modern Next.js storefront with an Express and MongoDB backend, product catalog management, admin tools, and a RAG-based shopping assistant. The assistant uses MongoDB Atlas Vector Search to recommend products, filter by budget, and build complete gaming setup bundles with items like a PC, monitor, keyboard, mouse, headset, webcam, and chair.",
+    stack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "MongoDB Atlas Vector Search",
+      "RAG",
+      "OpenAI SDK",
+      "GitHub Models",
+      "JWT",
+      "Zod",
+      "Axios",
+      "Zustand",
+    ],
+    // github: "https://github.com/mooka007/ShopGuideAI",
+    live: "https://www.youtube.com/watch?v=79eUjxUB6kU",
+    emoji: "🛒",
+    image: next,
+  },
   {
     title: "GaliPet",
     period: "2026",
@@ -38,10 +67,10 @@ const PROJECTS = [
       "React",
       "Vite",
     ],
-    github: "https://github.com/mooka007/Gali-pet",
+    github: "https://github.com/mooka007/galipetDoc",
     live: "https://gali-pet.vercel.app",
     emoji: "🐾",
-    image: "galipet",
+    image: gali,
   },
   {
     title: "Agilicis",
@@ -239,62 +268,64 @@ export default function Project() {
         I've worked on a variety of projects — from mobile apps to full-stack
         platforms. Here are a few of my favorites.
       </p>
-      <div className="projects-grid">
-        {PROJECTS.map((p, i) => (
-          <div className="project-card" key={i}>
-            {/* Project Image */}
-            <div className="project-image">
-              <img src={p.image} alt={p.title} />
-            </div>
+      <div className="projects-scroll" aria-label="Projects">
+        <div className="projects-grid">
+          {PROJECTS.map((p, i) => (
+            <div className="project-card" key={i}>
+              {/* Project Image */}
+              <div className="project-image">
+                <img src={p.image} alt={p.title} />
+              </div>
 
-            {/* Links */}
-            <div className="project-top">
-              {/* <div className="project-emoji">{p.emoji}</div> */}
-              <div className="project-links">
-                {p.github && (
-                  <a
-                    href={p.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="project-link"
-                    title="GitHub"
-                  >
-                    <FiGithub size={15} />
-                  </a>
-                )}
-                {p.live && (
-                  <a
-                    href={p.live}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="project-link"
-                    title="Demo"
-                  >
-                    <FiExternalLink size={15} />
-                  </a>
-                )}
+              {/* Links */}
+              <div className="project-top">
+                {/* <div className="project-emoji">{p.emoji}</div> */}
+                <div className="project-links">
+                  {p.github && (
+                    <a
+                      href={p.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="project-link"
+                      title="GitHub"
+                    >
+                      <FiGithub size={15} />
+                    </a>
+                  )}
+                  {p.live && (
+                    <a
+                      href={p.live}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="project-link"
+                      title="Demo"
+                    >
+                      <FiExternalLink size={15} />
+                    </a>
+                  )}
+                </div>
+              </div>
+
+              {/* Body */}
+              <div className="project-body">
+                <div className="project-title-row">
+                  <h3 className="project-title">{p.title}</h3>
+                  <span className="project-period">{p.period}</span>
+                </div>
+                <p className="project-desc">{p.description}</p>
+              </div>
+
+              {/* Stack */}
+              <div className="project-stack">
+                {p.stack.map((t, j) => (
+                  <span className="stack-tag" key={j}>
+                    {t}
+                  </span>
+                ))}
               </div>
             </div>
-
-            {/* Body */}
-            <div className="project-body">
-              <div className="project-title-row">
-                <h3 className="project-title">{p.title}</h3>
-                <span className="project-period">{p.period}</span>
-              </div>
-              <p className="project-desc">{p.description}</p>
-            </div>
-
-            {/* Stack */}
-            <div className="project-stack">
-              {p.stack.map((t, j) => (
-                <span className="stack-tag" key={j}>
-                  {t}
-                </span>
-              ))}
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

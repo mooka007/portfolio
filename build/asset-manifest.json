@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.db791b06.css",
-    "main.js": "/static/js/main.c13c6a6b.js",
+    "main.css": "/static/css/main.48767f92.css",
+    "main.js": "/static/js/main.802f739c.js",
     "static/media/visitMNOW.PNG": "/static/media/visitMNOW.2697502ed7235e13966f.PNG",
     "static/media/ana.png": "/static/media/ana.75063eebf9cf1703f369.png",
+    "static/media/next.png": "/static/media/next.2a66e064b03fb0de49c1.png",
     "static/media/yallah.PNG": "/static/media/yallah.ece78ca606425ad367f1.PNG",
+    "static/media/gali.png": "/static/media/gali.509d718eba37d73251b6.png",
     "static/media/oarding.png": "/static/media/oarding.2fd6e28bfcde9d2e7198.png",
     "static/media/cmpt.PNG": "/static/media/cmpt.3078c78583b78a5581ed.PNG",
     "static/media/pic1.PNG": "/static/media/pic1.9866b82349045edd4453.PNG",
@@ -20,11 +22,11 @@
     "static/media/App-Login.jpg": "/static/media/App-Login.59ffacdc333de255a087.jpg",
     "static/media/TTT.PNG": "/static/media/TTT.c6ba7da3ceec5ec91395.PNG",
     "index.html": "/index.html",
-    "main.db791b06.css.map": "/static/css/main.db791b06.css.map",
-    "main.c13c6a6b.js.map": "/static/js/main.c13c6a6b.js.map"
+    "main.48767f92.css.map": "/static/css/main.48767f92.css.map",
+    "main.802f739c.js.map": "/static/js/main.802f739c.js.map"
   },
   "entrypoints": [
-    "static/css/main.db791b06.css",
-    "static/js/main.c13c6a6b.js"
+    "static/css/main.48767f92.css",
+    "static/js/main.802f739c.js"
   ]
 }
