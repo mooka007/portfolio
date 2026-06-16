@@ -19,8 +19,32 @@ import oarding from "../../assets/oarding.png";
 import agilicis from "../../assets/aaa.PNG";
 import gali from "../../assets/gali.png";
 import next from "../../assets/next.png";
+import langchainRag from "../../assets/langchain-rag.svg";
 
 const PROJECTS = [
+  {
+    title: "LangChain Company Knowledge Assistant",
+    period: "2026",
+    description:
+      "A private AI knowledge assistant for Company X that combines LangChain.js RAG, semantic document search, PostgreSQL with pgvector, Prisma models, employee login accounts, and structured database answers. It can answer questions about branches, employees, projects, policies, risks, and logged-in user profiles while using direct database logic for exact business facts.",
+    stack: [
+      "LangChain.js",
+      "RAG",
+      "Next.js",
+      "React",
+      "Express.js",
+      "Node.js",
+      "PostgreSQL",
+      "pgvector",
+      "Prisma",
+      "GitHub Models",
+      "JWT",
+    ],
+    github: "https://github.com/mooka007/lang",
+    live: "https://youtu.be/K4-Of7leqWw",
+    emoji: "AI",
+    image: langchainRag,
+  },
   {
     title: "ShopGuide AI",
     period: "2026",

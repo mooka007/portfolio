@@ -1,0 +1,21 @@
+<svg width="900" height="560" viewBox="0 0 900 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="560" rx="34" fill="#0B1020"/>
+  <rect x="40" y="40" width="820" height="480" rx="28" fill="#111827"/>
+  <circle cx="158" cy="142" r="64" fill="#22C55E" fill-opacity="0.14"/>
+  <circle cx="742" cy="420" r="86" fill="#7C3AED" fill-opacity="0.18"/>
+  <path d="M192 178C278 104 364 104 450 178C536 252 622 252 708 178" stroke="#22C55E" stroke-width="14" stroke-linecap="round"/>
+  <path d="M192 282C278 208 364 208 450 282C536 356 622 356 708 282" stroke="#38BDF8" stroke-width="14" stroke-linecap="round"/>
+  <path d="M192 386C278 312 364 312 450 386C536 460 622 460 708 386" stroke="#A78BFA" stroke-width="14" stroke-linecap="round"/>
+  <rect x="92" y="92" width="208" height="96" rx="22" fill="#172554" stroke="#38BDF8" stroke-opacity="0.55"/>
+  <rect x="346" y="232" width="208" height="96" rx="22" fill="#064E3B" stroke="#22C55E" stroke-opacity="0.55"/>
+  <rect x="600" y="372" width="208" height="96" rx="22" fill="#312E81" stroke="#A78BFA" stroke-opacity="0.55"/>
+  <text x="126" y="130" fill="#E0F2FE" font-family="Arial, sans-serif" font-size="24" font-weight="700">Documents</text>
+  <text x="126" y="160" fill="#BAE6FD" font-family="Arial, sans-serif" font-size="16">RAG context</text>
+  <text x="388" y="270" fill="#DCFCE7" font-family="Arial, sans-serif" font-size="24" font-weight="700">LangChain</text>
+  <text x="389" y="300" fill="#BBF7D0" font-family="Arial, sans-serif" font-size="16">AI workflow</text>
+  <text x="650" y="410" fill="#EDE9FE" font-family="Arial, sans-serif" font-size="24" font-weight="700">Postgres</text>
+  <text x="650" y="440" fill="#DDD6FE" font-family="Arial, sans-serif" font-size="16">pgvector + Prisma</text>
+  <circle cx="450" cy="280" r="96" stroke="#F8FAFC" stroke-opacity="0.13" stroke-width="24"/>
+  <circle cx="450" cy="280" r="58" fill="#22C55E" fill-opacity="0.15" stroke="#22C55E" stroke-width="4"/>
+  <text x="402" y="291" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="30" font-weight="700">RAG</text>
+</svg>
