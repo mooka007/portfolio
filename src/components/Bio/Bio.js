@@ -77,9 +77,6 @@ export const Bio = () => (
     </div> */}
 
     {/* Skills */}
-    <p className="section-label" style={{ marginTop: "2.5rem" }}>
-      Skills
-    </p>
     <div className="skills-grid">
       {SKILLS.map((s, i) => (
         <span className="skill-tag" key={i}>

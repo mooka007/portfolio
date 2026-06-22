@@ -76,7 +76,6 @@ const EXPERIENCE = [
 export default function About() {
   return (
     <div>
-      <p className="section-label">Work Experience</p>
       <div className="exp-list">
         {EXPERIENCE.map((job, i) => (
           <div className="exp-card" key={i}>

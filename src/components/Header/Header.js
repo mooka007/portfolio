@@ -9,17 +9,20 @@ export default function Header() {
         <h1 className="hero-name">
           Hi, I'm Yassine <span className="wave">👋</span>
         </h1>
-        <p className="hero-title">Full-Stack Js Developer</p>
+        <p className="hero-title">Full-Stack JavaScript Developer</p>
         <p className="hero-location">
-          <FiMapPin size={13} /> Beni Mellal, Morocco
+          <FiMapPin size={13} /> CasaBlanca, Morocco
         </p>
         <p className="hero-bio">
-          I'm a passionate developer focused on building{" "}
-          <a href="#projects">real-world web & mobile apps</a> with React,
-          Node.js, and React Native. I love clean code,{" "}
-          <a href="#about">great UX</a>, and turning ideas into products.
+          I build <a href="#projects">websites, mobile apps, and SaaS products</a>{" "}
+          with React, Node.js, Express, React Native, PostgreSQL, and MongoDB.
+          I also bring AI into products through RAG features, smarter search,
+          document reasoning, and context-aware assistants.
         </p>
-        <p className="hero-cta">Let's create something meaningful together.</p>
+        <p className="hero-cta">
+          Open to Full Stack and React Native roles where I can bring energy,
+          ownership, and useful products to life.
+        </p>
       </div>
       <div className="hero-avatar">
         <div className="hero-avatar-inner">

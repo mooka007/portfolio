@@ -287,7 +287,6 @@ const PROJECTS = [
 export default function Project() {
   return (
     <div>
-      <p className="section-label">Check out my latest work</p>
       <p className="projects-sub">
         I've worked on a variety of projects — from mobile apps to full-stack
         platforms. Here are a few of my favorites.
