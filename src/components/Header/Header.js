@@ -14,8 +14,9 @@ export default function Header() {
           <FiMapPin size={13} /> CasaBlanca, Morocco
         </p>
         <p className="hero-bio">
-          I build <a href="#projects">websites, mobile apps, and SaaS products</a>{" "}
-          with React, Node.js, Express, React Native, PostgreSQL, and MongoDB.
+          I build{" "}
+          <a href="#projects">websites, mobile apps, and SaaS products</a> with
+          React, Next, Node.js, Express, React Native, PostgreSQL, and MongoDB.
           I also bring AI into products through RAG features, smarter search,
           document reasoning, and context-aware assistants.
         </p>
